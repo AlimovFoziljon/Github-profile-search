@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #C9D1D9;
+    font-family: 'Space Mono', monospace;
+}
+body{
+    background-color: #0D1117;
+}
+#wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-width: 900px;
+    margin: 0 auto;
+    gap: 30px;
+}
+.avatar{
+    width: 300px;
+    border-radius: 5px;
+}
+#form{
+    background-color: #161B22;
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+#input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.1em;
+    width: 100%;
+}
+#button{
+    padding: 10px 20px;
+    background-color: #1F6FEB;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+#results{
+    background-color: #161B22;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.card{
+    display: flex;
+    gap: 50px;
+}
+.user-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.user-statistic{
+    display: flex;
+    gap: 10px;
+}
+.link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+@media (max-width: 750px) {
+    .card{
+        flex-direction: column;
+    }
+    .avatar{
+        width: 220px;
+        margin: auto;
+    }
+}
+@media (max-width: 595px) {
+    .user-info h2{
+        font-size: 20px;
+    }
+    .user-info h3{
+        font-size: 16px;
+    }
+    .user-info h4{
+        font-size: 14px;
+    }
+    .user-statistic p{
+        font-size: 13px;
+    }
+    .link p{
+        font-size: 14px;
+    }
+    #input{
+        font-size: 1em;
+    }
+}
