@@ -28,7 +28,7 @@ function getResult(userData) {
             <h4>Id: ${userData.id}</h4>
             <div class="user-statistic">
                 <p>Followers: ${userData.followers}</p>
-                <p>Followers: ${userData.following}</p>
+                <p>Following: ${userData.following}</p>
                 <p>Repositories: ${userData.public_repos}</p>
             </div>
             <div class"user-links">
